@@ -7,7 +7,7 @@ export default class CustomerService{
     getCustomerServiceList(listParam){ 
         if(listParam.listType == 'list'){
             return mm.request({
-                    url     : mm.getServerUrl('/manage/customer_service/list.do'),
+                    url     : mm.getServerUrl('/manage/customer_service/list'),
                     data    : {
                         pageNum : listParam.pageNum || 1
                     }
@@ -15,14 +15,14 @@ export default class CustomerService{
             }
             else if(listParam.listType == 'search'){
                 return mm.request({
-                    url     : mm.getServerUrl('/manage/customer_service/search.do'),
+                    url     : mm.getServerUrl('/manage/customer_service/search'),
                     data    : listParam
             });
         }
     }
     getCustomerService(csId){
         return mm.request({
-                    url     : mm.getServerUrl('/manage/customer_service/get.do'),
+                    url     : mm.getServerUrl('/manage/customer_service/get'),
                     data    : {
                         csId : csId
                     }
@@ -30,7 +30,7 @@ export default class CustomerService{
     }
     updateCustomerService(customerService){
         return mm.request({
-                    url     : mm.getServerUrl('/manage/customer_service/reply_service.do'),
+                    url     : mm.getServerUrl('/manage/customer_service/reply_service'),
                     data    : {
                         id          : customerService.id,
                         status      : customerService.state,

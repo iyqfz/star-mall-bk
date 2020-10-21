@@ -25,7 +25,7 @@ export default class User{
     // 登录
     login(userInfo){
         return mm.request({
-            url     : mm.getServerUrl('/manage/user/login.do'),
+            url     : mm.getServerUrl('/manage/user/login'),
             method  : 'POST',
             data    : {
                 username : userInfo.username || '',
@@ -36,7 +36,7 @@ export default class User{
     // 退出登录
     logout(){
         return mm.request({
-            url     : mm.getServerUrl('/user/logout.do'),
+            url     : mm.getServerUrl('/user/logout'),
             method  : 'POST',
         });
     }
@@ -44,7 +44,7 @@ export default class User{
     getUserList(listParam){
         if(listParam.listType == 'list'){
             return mm.request({
-                url     : mm.getServerUrl('/manage/user/list.do'),
+                url     : mm.getServerUrl('/manage/user/list'),
                 data    : {
                     pageNum : listParam.pageNum || 1
                 }
@@ -52,7 +52,7 @@ export default class User{
         }
         else if(listParam.listType == 'search'){
             return mm.request({
-                url     : mm.getServerUrl('/manage/user/search.do'),
+                url     : mm.getServerUrl('/manage/user/search'),
                 data    : listParam
             });
         }
@@ -60,7 +60,7 @@ export default class User{
     // 获取用户收货地址信息
     getUserShipping(listParam){
         return mm.request({
-            url     : mm.getServerUrl('/manage/user/shipping_list.do'),
+            url     : mm.getServerUrl('/manage/user/shipping_list'),
             data    : {
                 pageNum  : listParam.pageNum || 1,
                 userId   : listParam.userId
@@ -71,7 +71,7 @@ export default class User{
     // 获取用户信息
     getUser(userId){
         return mm.request({
-            url     : mm.getServerUrl('/manage/user/get.do'),
+            url     : mm.getServerUrl('/manage/user/get'),
             data    : {
                 userId   : userId
             },
@@ -81,7 +81,7 @@ export default class User{
     // 添加管理员
     saveUser(user){
         return mm.request({
-            url     : mm.getServerUrl('/manage/user/add.do'),
+            url     : mm.getServerUrl('/manage/user/add'),
             data    : {
                 username   : user.username,
                 password   : user.password,
@@ -93,7 +93,7 @@ export default class User{
     // 更新用户信息
     editUser(user){
         return mm.request({
-            url     : mm.getServerUrl('/manage/user/edit.do'),
+            url     : mm.getServerUrl('/manage/user/edit'),
             data    : {
                 id            : user.id,
                 email         : user.email,

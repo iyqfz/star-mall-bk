@@ -7,7 +7,7 @@ export default class Order{
     getOrderList(listParam){
         if(listParam.listType == 'list'){
             return _mm.request({
-                url     : _mm.getServerUrl('/manage/order/list.do'),
+                url     : _mm.getServerUrl('/manage/order/list'),
                 data    : {
                     pageNum : listParam.pageNum || 1
                 }
@@ -15,7 +15,7 @@ export default class Order{
         }
         else if(listParam.listType == 'search'){
             return _mm.request({
-                url     : _mm.getServerUrl('/manage/order/search.do'),
+                url     : _mm.getServerUrl('/manage/order/search'),
                 data    : listParam
             });
         }
@@ -23,7 +23,7 @@ export default class Order{
     // 获取订单详情
     getOrderDetail(orderNo){
         return _mm.request({
-            url     : _mm.getServerUrl('/manage/order/detail.do'),
+            url     : _mm.getServerUrl('/manage/order/detail'),
             data    : {
                 orderNo : orderNo || 0
             }
@@ -32,7 +32,7 @@ export default class Order{
     // 发货
     sendGoods(orderNo){
         return _mm.request({
-            url     : _mm.getServerUrl('/manage/order/send_goods.do'),
+            url     : _mm.getServerUrl('/manage/order/send_goods'),
             data    : {
                 orderNo : orderNo || 0
             }
