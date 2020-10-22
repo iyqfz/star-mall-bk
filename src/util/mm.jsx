@@ -3,7 +3,7 @@ const conf = {
     // serverHost: 'http://admin.chirou.shop'
     // dev
     serverHost: '',
-    imageHost: 'http://img.chirou.shop/',
+    imageHost: 'http://img.iyqrj.com/',
 }
 
 class MMUtil{

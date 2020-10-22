@@ -8,6 +8,9 @@ var WEBPACK_ENV            = process.env.WEBPACK_ENV || 'dev';
 
 //webpack config
 var config = {
+    devServer: {
+        host: 'localhost.charlesproxy.com',
+    },
     entry: {
         'app'                     : ['./src/index.jsx']
     },
