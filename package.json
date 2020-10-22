@@ -8,7 +8,7 @@
     "dev": "WEBPACK_ENV=dev webpack-dev-server --port 8086 --inline --secure false",
     "dev_win": "set WEBPACK_ENV=dev && webpack-dev-server --port 8086 --inline --secure false",
     "dist": "WEBPACK_ENV=online webpack -p",
-    "dist_win": "set WEBPACK_ENV=online && webpack -p"
+    "dist_win": "set WEBPACK_ENV=dev && webpack -p"
   },
   "repository": {
     "type": "git",
