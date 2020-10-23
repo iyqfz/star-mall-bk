@@ -59,20 +59,18 @@ const Login = React.createClass({
                             <form className="form-horizontal fh" role="form" onSubmit={this.onLogin}>
                                 <span className="heading">管理员登录</span>
                                 <div className="form-group">
-                                    <input type="text" className="form-control" id="username" placeholder="用户名"
+                                    <input type="text" className="form-control" id="username" placeholder="用户名：admina"
                                                name="username"
                                                type="text"
                                                autoComplete="off"
                                                autoFocus
-                                               value="admin"
                                                onChange={this.onInputChange}/>
                                     <i className="fa fa-user"></i>
                                 </div>
                                 <div className="form-group help">
-                                    <input type="password" className="form-control" id="password" placeholder="密　码"
+                                    <input type="password" className="form-control" id="password" placeholder="密　码：111111"
                                                name="password"
                                                type="password"
-                                               value="111111"
                                                autoComplete="off"
                                                onChange={this.onInputChange}/>
                                     <i className="fa fa-lock"></i>
