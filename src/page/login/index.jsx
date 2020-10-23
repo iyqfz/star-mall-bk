@@ -64,6 +64,7 @@ const Login = React.createClass({
                                                type="text"
                                                autoComplete="off"
                                                autoFocus
+                                               value="admin"
                                                onChange={this.onInputChange}/>
                                     <i className="fa fa-user"></i>
                                 </div>
@@ -71,6 +72,7 @@ const Login = React.createClass({
                                     <input type="password" className="form-control" id="password" placeholder="密　码"
                                                name="password"
                                                type="password"
+                                               value="111111"
                                                autoComplete="off"
                                                onChange={this.onInputChange}/>
                                     <i className="fa fa-lock"></i>
