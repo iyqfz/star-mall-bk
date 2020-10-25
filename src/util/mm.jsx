@@ -1,6 +1,6 @@
 const conf = {
     // online
-    // serverHost: 'http://admin.chirou.shop'
+    // serverHost: 'http://java.admin.iyqrj.com'
     // dev
     serverHost: '',
     imageHost: 'http://img.iyqrj.com/',
