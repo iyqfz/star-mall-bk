@@ -16,8 +16,8 @@ var config = {
     },
     output: {
         path       : __dirname + '/dist/',         //文件存放的位置
-        publicPath : WEBPACK_ENV === 'online' ? '//static.iyqrj.com/star-mall-bk/dist/' : '/dist/',
-        //publicPath : 'dev' === WEBPACK_ENV ? '/dist/' : '//static.iyqrj.com/star-mall-bk/dist/',   //访问的路径
+        // publicPath : WEBPACK_ENV === 'online' ? '//static.iyqrj.com/star-mall-bk/dist/' : '/dist/',
+        publicPath : 'dev' === WEBPACK_ENV ? '/dist/' : '//static.iyqrj.com/star-mall-bk/dist/',   //访问的路径
         // publicPath : '//static.iyqrj.com/star-mall-bk/dist/',
         filename   : 'js/[name].js'
     },
